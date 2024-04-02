@@ -13,6 +13,7 @@ import PortfolioSection from '../components/portfolio/PortfolioSection'
 import WorkExperience from '../components/home/WorkExperience'
 import ContentWrapper from '@/components/shared/ContentWrapper'
 import Contact from '@/components/home/Contact'
+import Skills from '../components/home/Skills'
 
 // Lazy-loaded components
 // const Diamond = lazy(() => import('@/components/home/Diamond'))
@@ -65,6 +66,7 @@ export default function Home() {
         <SectionHeader text='A Little History' extraStyles='my-32' />
       </div>
       <WorkExperience />
+      <Skills />
       <Testimonials />
       <Contact />
       {/* </Suspense> */}

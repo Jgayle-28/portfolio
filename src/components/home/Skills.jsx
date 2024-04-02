@@ -1,13 +1,12 @@
-import { useAnimate } from 'framer-motion'
-import React, { useRef } from 'react'
 import { motion } from 'framer-motion'
-import { FiArrowDownCircle, FiDollarSign } from 'react-icons/fi'
-import { SiApple } from 'react-icons/si'
 
 export default function Skills() {
   return (
     // <MouseImageTrail renderImageBuffer={50} rotationRange={25} images={[]}>
-    <section className='h-[40vh] bg-brandBlack relative mt-32'>
+    <section
+      className='h-[40vh] bg-brandBlack relative mt-32 mb-62
+  '
+    >
       <Copy />
       <WatermarkWrapper />
     </section>
@@ -89,49 +88,3 @@ const TranslateWrapper = ({ children, reverse }) => {
     </motion.div>
   )
 }
-
-// import React from 'react'
-// import { motion } from 'framer-motion'
-
-// export default function Skills() {
-//   return (
-//     <section className='h-[100px]'>
-//       <Watermark text='Mongo DB' />
-//       <Watermark text='Figma' reverse />
-//       <Watermark text='React' />
-//       <Watermark text='Build an empire' reverse />
-//       <Watermark text='Get motivated' />
-//       <Watermark text='Live inspired' reverse />
-//       <Watermark text='Find your passion' />
-//       <Watermark text='Build an empire' reverse />
-//     </section>
-//   )
-// }
-
-// const Watermark = ({ reverse, text }) => (
-//   <div className='flex -translate-y-12 select-none overflow-hidden'>
-//     <TranslateWrapper reverse={reverse}>
-//       <span className='w-fit whitespace-nowrap text-[10vmax] font-black uppercase leading-[0.75] text-white'>
-//         {text}
-//       </span>
-//     </TranslateWrapper>
-//     <TranslateWrapper reverse={reverse}>
-//       <span className='ml-48 w-fit whitespace-nowrap text-[10vmax] font-black uppercase leading-[0.75] text-white'>
-//         {text}
-//       </span>
-//     </TranslateWrapper>
-//   </div>
-// )
-
-// const TranslateWrapper = ({ children, reverse }) => {
-//   return (
-//     <motion.div
-//       initial={{ translateX: reverse ? '-100%' : '0%' }}
-//       animate={{ translateX: reverse ? '0%' : '-100%' }}
-//       transition={{ duration: 75, repeat: Infinity, ease: 'linear' }}
-//       className='flex'
-//     >
-//       {children}
-//     </motion.div>
-//   )
-// }

@@ -14,7 +14,10 @@ export default function Testimonials() {
   })
 
   return (
-    <section ref={mainContainer} className={`${styles.cardScrollMain} px-8`}>
+    <section
+      ref={mainContainer}
+      className={`${styles.cardScrollMain} px-8 pt-64`}
+    >
       <div className='max-w-5xl mx-auto'>
         <SectionHeader text='A few Nice Words' extraStyles='mt-20' />
       </div>
