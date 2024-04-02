@@ -4,7 +4,7 @@ export default function Skills() {
   return (
     // <MouseImageTrail renderImageBuffer={50} rotationRange={25} images={[]}>
     <section
-      className='h-[40vh] bg-brandBlack relative mt-32 mb-62
+      className='h-[40vh] bg-brandBlack relative mb-62
   '
     >
       <Copy />
