@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300&family=Open+Sans:wght@200;300;400;500;600;700;800&display=swap');
+@import 'variables.scss';
+
+:root {
+  --primary-color: $secondary-color;
+  --secondary-color: $primary-color;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Dosis', sans-serif;
+  font-weight: 400;
+}
+
+font-dosis {
+  font-family: 'Dosis', sans-serif !important;
+}
+
+// Text animation
+.paragraph {
+  display: flex;
+  font-size: 60px;
+  line-height: 1;
+  padding: 40px;
+  max-width: 1280px;
+  color: white;
+  flex-wrap: wrap;
+  .word {
+    position: relative;
+    margin-right: 12px;
+    margin-top: 12px;
+    .shadow {
+      position: absolute;
+      opacity: 20%;
+    }
+  }
+}

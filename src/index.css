@@ -1,0 +1,86 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300&family=Open+Sans:wght@200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+@import url('https://use.typekit.net/yur3tiw.css');
+/* @import 'variables.scss'; */
+
+/* @font-face {
+  font-family: 'durer';
+  src: url('fonts/durer-webfont.woff2') format('woff2'),
+    url('fonts/durer-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+} */
+
+:root {
+  --font-primary: durer;
+  --color-bg: #000;
+
+  --primary-color: #00ded4;
+  --secondary-color: #d60c83;
+  --backgroundColor: #292929;
+  --primaryColor: #0aa1ff;
+  --primaryTextColor: #e6e6e6;
+
+  --headlineBig: clamp(5rem, 9.9vw, 15rem);
+  --headlineMedium: clamp(1rem, 2vw, 4rem);
+  --headlineSmall: clamp(0.6rem, 0.75vw, 1.3rem);
+  --spacing: clamp(0.9rem, 0.75vw, 1.3rem);
+}
+
+body {
+  background-color: var(--color-bg);
+  font-size: 1vw;
+  margin: 0;
+  font-family: 'itc-avant-garde-gothic-pro', sans-serif;
+  /* font-family: 'Poppins', sans-serif; */
+  /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif; */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: white;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Dosis', sans-serif;
+  font-weight: 400;
+}
+
+font-dosis {
+  font-family: 'Dosis', sans-serif !important;
+}
+
+.header-tracking {
+  letter-spacing: 0.5em;
+}
+
+#tsparticles {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  top: 0;
+  left: 0;
+}
+#tsparticles2 {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  top: 0;
+  left: 0;
+}

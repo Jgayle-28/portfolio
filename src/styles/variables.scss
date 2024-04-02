@@ -1,0 +1,29 @@
+$primary-color: #00ded4;
+$secondary-color: #d60c83;
+$brand-black: #0f121c;
+
+$primary-text-color: #fff;
+$secondary-text-color: #f6f8f9;
+$heading-text-color: #222b35;
+
+:root {
+  --primary-color: $secondary-color;
+  --secondary-color: $primary-color;
+  --backgroundColor: #292929;
+  --primaryColor: #0aa1ff;
+  --primaryTextColor: #e6e6e6;
+
+  --headlineBig: clamp(5rem, 9.9vw, 15rem);
+  --headlineMedium: clamp(1rem, 2vw, 4rem);
+  --headlineSmall: clamp(0.6rem, 0.75vw, 1.3rem);
+  --spacing: clamp(0.9rem, 0.75vw, 1.3rem);
+}
+
+$font-family: 'Open Sans', sans-serif;
+$header-font: 'Dosis', sans-serif;
+
+// Media Breakpoints
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px;
