@@ -14,31 +14,7 @@ import WorkExperience from '../components/home/WorkExperience'
 import ContentWrapper from '@/components/shared/ContentWrapper'
 import Contact from '@/components/home/Contact'
 import Skills from '../components/home/Skills'
-
-// Lazy-loaded components
-// const Diamond = lazy(() => import('@/components/home/Diamond'))
-// const TitleReveal = lazy(() =>
-//   import('../components/shared/title-reveal/TitleReveal')
-// )
-// const ContentWrapper = lazy(() => import('@/components/shared/ContentWrapper'))
-// const SectionHeader = lazy(() => import('@/components/shared/SectionHeader'))
-// const AboutIntro = lazy(() => import('@/components/page-intro/AboutIntro'))
-// const Hero = lazy(() => import('@/components/home/Hero'))
-// const ParagraphReveal = lazy(() =>
-//   import('@/components/shared/ParagraphReveal')
-// )
-// const PortfolioSection = lazy(() =>
-//   import('../components/portfolio/PortfolioSection')
-// )
-// const Testimonials = lazy(() => import('../components/home/Testimonials'))
-// const WorkExperience = lazy(() => import('../components/home/WorkExperience'))
-// // const Skills = lazy(() => import('../components/about/Skills'))
-// // const Experience = lazy(() => import('../components/about/Experience'))
-// // const ShuffleTestimonials = lazy(() =>
-// //   import('../components/ShuffleTestimonials')
-// // )
-
-// const Contact = lazy(() => import('./Contact'))
+import Socials from '@/components/shared/Socials'
 
 export default function Home() {
   const { scrollYProgress } = useScroll()
@@ -46,7 +22,6 @@ export default function Home() {
 
   return (
     <>
-      {/* <Suspense fallback={<div>Loading...</div>}> */}
       <Hero />
       <ContentWrapper extraStyles='py-[300px] bg-gradient-to-b from-neutral-900/70 to-black'>
         <ParagraphReveal paragraph={introParagraph} />
@@ -69,7 +44,7 @@ export default function Home() {
       <Skills />
       <Testimonials />
       <Contact />
-      {/* </Suspense> */}
+      <Socials />
     </>
   )
 }

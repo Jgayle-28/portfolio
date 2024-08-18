@@ -6,6 +6,7 @@ import Entrance from '@/components/Entrance'
 // Pages
 import Home from '@/pages/Home'
 import SingleProject from '@/pages/SingleProject'
+import NotFound from '@/pages/NotFound'
 
 const App = () => {
   const { initialLoad } = useGlobalContext()
@@ -27,10 +28,8 @@ const App = () => {
       <Router>
         <main className='flex-1'>
           <Routes>
+            <Route path='*' element={<NotFound />} />
             <Route path='/' element={<Home />} />
-            {/* <Route path='/about' element={<About />} />
-            <Route path='/portfolio' element={<Portfolio />} />
-            <Route path='/contact' element={<Contact />} /> */}
             <Route path='/project/:id' element={<SingleProject />} />
           </Routes>
         </main>
